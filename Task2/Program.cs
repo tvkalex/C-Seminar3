@@ -17,5 +17,5 @@ System.Console.WriteLine("Введите координату y1:");
 point[4] = Convert.ToInt32(System.Console.ReadLine());
 System.Console.WriteLine("Введите координату z1:");
 point[5] = Convert.ToInt32(System.Console.ReadLine());
-double rez = (Math.Sqrt(Math.Pow((point[3]-point[0]), 2) + Math.Pow((point[4]-point[1]), 2) + Math.Pow((point[5]-point[2]), 2)));
-System.Console.WriteLine(Math.Round(rez, 2));
+double rez = (Math.Sqrt(Math.Pow(point[3]-point[0], 2) + Math.Pow(point[4]-point[1], 2) + Math.Pow(point[5]-point[2], 2)));
+System.Console.WriteLine($"Расстояние между точками в 3D пространстве: {Math.Round(rez, 2)}");
